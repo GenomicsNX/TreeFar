@@ -140,7 +140,7 @@ The 3’UTR segment list (hg19 used in this study can be found [here](docs/segme
 ### Perform quantification using the selected tool.
 
 ### Create data table for use by TreeFar
-The quantifications from tools other than kallisto will need to be manually aggregated into a table for use by TreeFar.  At a minimum, the table should include columns for GeneID, segment (numerical value), and TPMs for each replicate.  Labels for the TPM column should be the experimental condition so that TreeFar can perform comparisons.  See [here](data_table_input.txt) for an example input table and below for the command.
+The quantifications from tools other than kallisto will need to be manually aggregated into a table for use by TreeFar.  At a minimum, the table should include columns for GeneID, segment (numerical value), and TPMs for each replicate.  Labels for the TPM column should be the experimental condition so that TreeFar can perform comparisons.  See [here](docs/data_table_input.txt) for an example input table and below for the command.
 
 In the command line, instead of `--files_path` use `--table` to point to the location of the aggregated output table.
 
@@ -151,7 +151,7 @@ In this case, `-g0` and `-g1` will have the list of the column names for the con
 
 # Citations
 
-Kishor et al NAR 2020
+Kishor et al NAR 2020 - Accepted
 
 Bray NL, Pimentel H, Melsted P, Pachter L. Near-optimal probabilistic RNA-seq quantification Nat Biotechnol. 2016;34(5):525‐527. <a href="https://doi.org/10.1038/nbt.3519" class="" classname="" target="_blank" name="">doi:10.1038/nbt.3519</a>
 
