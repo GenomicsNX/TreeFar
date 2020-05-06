@@ -30,7 +30,7 @@ Packages used for program development (required to run TreeFar)
 - rpy2 v3.2.2
 - Numpy v1.17.2
 - Pandas v0.24.2
-- Scipy v1.4.1
+- Scipy v1.4.1 <br/>
 Download the script for TreeFar [here](docs/TreeFar.py).
 
 # Usage
