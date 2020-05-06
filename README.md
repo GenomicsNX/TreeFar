@@ -9,6 +9,15 @@ For the hg19 segment library used in this study, the kallisto index is available
 - The first segment is from the 5’end of a transcript to the first annotated polyA site, and each subsequent segment is defined by sequential polyA sites (see schematic [here](docs/Work_Flow.pdf)).
 To use TreeFar with other quantification tools or to change the polyA site usage filter from 30%, the full list of segments for hg19 is available [here](docs/all_segment_annotations.txt.zip).
 
+
+TreeFar Workflow 
+--------
+<p align="center">
+  <img src="docs/Workflow_TreeFar.png" title="TreeFar Workflow">
+</p>
+
+
+
 ## Notes 
 - The reference sets provided here are for use with human hg19 annotations.  
 - For other annotations and species, the user will need to generate a segment library, but TreeFar may still be used to determine the APA outcome.  Suggestions for this are found at the end of this user guide.
