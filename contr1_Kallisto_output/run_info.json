@@ -1,0 +1,13 @@
+{
+	"n_targets": 29868,
+	"n_bootstraps": 1000,
+	"n_processed": 179626545,
+	"n_pseudoaligned": 112762234,
+	"n_unique": 111374273,
+	"p_pseudoaligned": 62.8,
+	"p_unique": 62.0,
+	"kallisto_version": "0.46.2",
+	"index_version": 10,
+	"start_time": "Tue Apr 14 22:06:08 2020",
+	"call": "kallisto quant -i /data/Hogg_lab/APA/NEWindex -o /data/Hogg_lab/APA/Archer/contr1 --bias -b 1000 -t 16 --rf-stranded contr1/SRR10669441_1.fastq contr1/SRR10669441_2.fastq"
+}
