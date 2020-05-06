@@ -36,7 +36,7 @@ Download the script for TreeFar [here](docs/TreeFar.py).
 
 # Usage
 ## First, quantify segment usage
-Use kallisto to quantify the segments using RNA-Seq data.  Example kallisto output contains three files found [in this folder](contr1_Kallisto_output/), 1) [abundance.tsv] (contr1_Kallisto_output/abundance.tsv), 2) [run_info.json](contr1_Kallisto_output/run_info.json), and 3) [abundance.h5](http://bioinformatics.nhlbi.nih.gov/files/Hogg_Lab/TreeFar/abundance.h5.zip).  The output columns used by TreeFar are "target_id" and "tpm."
+Use kallisto to quantify the segments using RNA-Seq data.  Example kallisto output contains three files found [in this folder](contr1_Kallisto_output/), 1) [abundance.tsv](contr1_Kallisto_output/abundance.tsv), 2) [run_info.json](contr1_Kallisto_output/run_info.json), and 3) [abundance.h5](http://bioinformatics.nhlbi.nih.gov/files/Hogg_Lab/TreeFar/abundance.h5.zip).  The output columns used by TreeFar are "target_id" and "tpm."
 - The hg19 kallisto index from this study can be downloaded [here](http://bioinformatics.nhlbi.nih.gov/files/Hogg_Lab/TreeFar/hg19index.zip) (Please unzip the file after downloading) and may be used for pseudoalignment if appropriate.
 ```
 kallisto quant -i hg19index -o contr1 --bias -b 1000 -t 16 --rf-stranded FASTQ-files
