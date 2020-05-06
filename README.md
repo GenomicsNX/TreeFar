@@ -143,7 +143,7 @@ In this case, `-g0` and `-g1` will have the list of the column names for the con
 
 Kishor et al NAR 2020
 
-Bray NL, Pimentel H, Melsted P, Pachter L. Near-optimal probabilistic RNA-seq quantification Nat Biotechnol. 2016;34(5):525‐527. <a href="http://doi:10.1038/nbt.3519" class="" classname="" target="_blank" name="">doi:10.1038/nbt.3519</a>
+Bray NL, Pimentel H, Melsted P, Pachter L. Near-optimal probabilistic RNA-seq quantification Nat Biotechnol. 2016;34(5):525‐527. <a href="https://doi.org/10.1038/nbt.3519" class="" classname="" target="_blank" name="">doi:10.1038/nbt.3519</a>
 
-Wang R, Nambiar R, Zheng D, Tian B. PolyA_DB 3 catalogs cleavage and polyadenylation sites identified by deep sequencing in multiple genomes. Nucleic Acids Res. 2018;46(D1):D315‐D319. <a href="https://doi:10.1038/nbt.3519" class="" classname="" target="_blank" name="">doi:10.1093/nar/gkx1000</a>
+Wang R, Nambiar R, Zheng D, Tian B. PolyA_DB 3 catalogs cleavage and polyadenylation sites identified by deep sequencing in multiple genomes. Nucleic Acids Res. 2018;46(D1):D315‐D319. <a href="https://doi.org/10.1093/nar/gkx1000" class="" classname="" target="_blank" name="">doi:10.1093/nar/gkx1000</a>
 
