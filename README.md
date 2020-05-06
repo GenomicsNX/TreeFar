@@ -44,7 +44,7 @@ kallisto quant -i hg19index -o contr1 --bias -b 1000 -t 16 --rf-stranded FASTQ-f
 ## Second, collect kallisto output for TreeFar to access
 For each RNA-Seq dataset, kallisto outputs a folder that is named by the user.  However, the name is not carried through to the files within the folder.
 - For each dataset that will be used for TreeFar analysis, move/copy the “abundance.tsv” file into a folder with all of its controls and replicates.  
-- Prefix each kallisto output with its name.  Format the file name as “name_abundance.tsv.”  (See example folder provided [here](docs/Output_collected_for_TreeFar)
+- Prefix each kallisto output with its name.  Format the file name as “name_abundance.tsv.”  (See example folder provided [here](Output_collected_for_TreeFar/)
 
 ## Finally, run TreeFar
 ```
