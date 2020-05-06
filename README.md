@@ -13,7 +13,7 @@ To use TreeFar with other quantification tools or to change the polyA site usage
 TreeFar Workflow 
 --------
 <p align="center">
-  <img src="Workflow_TreeFar.png" title="TreeFar Workflow">
+  <img src="docs/Workflow_TreeFar.png" title="TreeFar Workflow">
 </p>
 
 
