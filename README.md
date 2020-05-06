@@ -2,12 +2,12 @@
 This program was designed to evaluate the relative 3’UTR length differences between two user-defined conditions.  In order to accomplish this, transcripts are divided into sections defined by annotated alternative cleavage and polyadenylation sites. The read abundance in each section is compared between conditions.  The final output of the program is a table with all the relative segment abundances as well as the calculated relative use of the 3’UTR as a whole.
 
 ## Features of the segment library used in this study
-For the hg19 segment library used in this study, the kallisto index is available for download [here](docs/hg19index).
+For the hg19 segment library used in this study, the kallisto index is available for download [here](http://bioinformatics.nhlbi.nih.gov/files/Hogg_Lab/TreeFar/hg19index).
 - Segments were defined from polyadenylation (polyA) sites annotated in [PolyA_DB](http://exon.njms.rutgers.edu/polya_db/v3/).  
 - Only polyA sites used in greater than 30% of samples in PolyA_DB are represented.
 - Transcripts with termination codons not in the last exon were excluded.
 - The first segment is from the 5’end of a transcript to the first annotated polyA site, and each subsequent segment is defined by sequential polyA sites (see schematic [here](docs/Work_Flow.pdf)).
-To use TreeFar with other quantification tools or to change the polyA site usage filter from 30%, the full list of segments for hg19 is available [here](docs/all_segment_annotations.txt).
+To use TreeFar with other quantification tools or to change the polyA site usage filter from 30%, the full list of segments for hg19 is available [here](docs/all_segment_annotations.txt.zip).
 
 ## Notes 
 - The reference sets provided here are for use with human hg19 annotations.  
