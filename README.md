@@ -74,7 +74,7 @@ python TreeFar.py --files_path Output_collected_for_TreeFar -g0 contr1,contr2,co
 # Output file contents
 
 <b>Two output files are generated.</b>
-- The first is quantification of all the segments prior to analysis by TreeFar (example [here](docs/ Quant_8hDex_vs_cont.csv)).  
+- The first is quantification of all the segments prior to analysis by TreeFar (example [here](results/ Quant_8hDex_vs_cont.csv)).  
 - The second is the final output table (example [here](results/NMD_8hDex_vs_cont.csv).  Note that the 3’UTR segments filtered out of the analysis are dropped to the end of the table, with the reason for exclusion in the “FILTER” column.
 For explanation of segdiff and normdiff calculations, see schematic and the paper methods section.  
 
