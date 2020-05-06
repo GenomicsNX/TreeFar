@@ -36,7 +36,7 @@ Download the script for TreeFar [here](docs/TreeFar.py).
 
 # Usage
 ## First, quantify segment usage
-Use kallisto to quantify the segments using RNA-Seq data.  Example kallisto output is found [in this folder](contr1_Kallisto_output/).  The output columns used by TreeFar are “target_id” and “tpm.”
+Use kallisto to quantify the segments using RNA-Seq data.  Example kallisto output contains three files found [in this folder](contr1_Kallisto_output/), 1) abundance.tsv (contr1_Kallisto_output/abundance.tsv), 2) run_info.json (contr1_Kallisto_output/run_info.json), and 3) abundance.h5 (http://bioinformatics.nhlbi.nih.gov/files/Hogg_Lab/TreeFar/abundance.h5.zip).  The output columns used by TreeFar are "target_id" and "tpm."
 - The hg19 kallisto index from this study can be downloaded [here](http://bioinformatics.nhlbi.nih.gov/files/Hogg_Lab/TreeFar/hg19index.zip) (Please unzip the file after downloading) and may be used for pseudoalignment if appropriate.
 ```
 kallisto quant -i hg19index -o contr1 --bias -b 1000 -t 16 --rf-stranded FASTQ-files
@@ -44,8 +44,8 @@ kallisto quant -i hg19index -o contr1 --bias -b 1000 -t 16 --rf-stranded FASTQ-f
 
 ## Second, collect kallisto output for TreeFar to access
 For each RNA-Seq dataset, kallisto outputs a folder that is named by the user.  However, the name is not carried through to the files within the folder.
-- For each dataset that will be used for TreeFar analysis, move/copy the “abundance.tsv” file into a folder with all of its controls and replicates.  
-- Prefix each kallisto output with its name.  Format the file name as “name_abundance.tsv.”  (See example folder provided [here](Output_collected_for_TreeFar/)
+- For each dataset that will be used for TreeFar analysis, move/copy the "abundance.tsv" file into a folder with all of its controls and replicates.  
+- Prefix each kallisto output with its name.  Format the file name as "name_abundance.tsv."  (See example folder provided [here](Output_collected_for_TreeFar/)
 
 ## Finally, run TreeFar
 ```
@@ -53,7 +53,7 @@ Usage: python TreeFar.py [arguments]
 
 Required arguments:
 --files_path, -f			directory of kallisto output files for use by TreeFar
---group_control, -g0		comma separated list of the first set of kallisto output data files (typically control).  The algorithm assumes the kallisto output files are named along the lines of “NT1_abundance.tsv” so you would just put whatever comes before the “_abundance.tsv” in this list.
+--group_control, -g0		comma separated list of the first set of kallisto output data files (typically control).  The algorithm assumes the kallisto output files are named along the lines of "NT1_abundance.tsv" so you would just put whatever comes before the "_abundance.tsv" in this list.
 --group_treatment, -g1	comma separated list of the second set of kallisto output data files (typically test condition).  Similar naming convention as described above.
 --out, -o 			File prefix for final output table.  The final output name will be this string + l1 + l0, where the final two components are automatically appended by the algorithm.
 --out_main, -x			File prefix for data before filtering and analysis
@@ -75,7 +75,7 @@ python TreeFar.py --files_path Output_collected_for_TreeFar -g0 contr1,contr2,co
 
 <b>Two output files are generated.</b>
 - The first is quantification of all the segments prior to analysis by TreeFar (example [here](results/Quant_8hDex_vs_cont.csv)).
-- The second is the final output table (example [here](results/NMD_8hDex_vs_cont.csv).  Note that the 3’UTR segments filtered out of the analysis are dropped to the end of the table, with the reason for exclusion in the “FILTER” column.
+- The second is the final output table (example [here](results/NMD_8hDex_vs_cont.csv).  Note that the 3’UTR segments filtered out of the analysis are dropped to the end of the table, with the reason for exclusion in the "FILTER" column.
 For explanation of segdiff and normdiff calculations, see schematic and the paper methods section.  
 
 <b>The output is a comma-separated file with the following columns:</b><br/>
@@ -126,7 +126,7 @@ FILTER: explanation for why the segment was not included in the analysis<br/>
 To use TreeFar, transcript segments must be defined and numbered for pseudoalignment. 
 - The names of each segment should have values in the following format: 
 Transcript GeneID|GeneName|left coordinate|right coordinate|pA site|Termination codon site|frequency of pA site usage|segment of transcript|strand
-(See “target_id” column in this [table](results/Quant_8hDex_vs_cont.csv) for examples of multi-segment transcripts)
+(See "target_id" column in this [table](results/Quant_8hDex_vs_cont.csv) for examples of multi-segment transcripts)
 - The left and right segment coordinates are specific to each segment (for the first segment, the left will be the beginning of the 5’UTR and the right will be the first polyA site in the 3’UTR; for each subsequent segment, the left will be the previous polyA site and the right will be the current polyA site)
 - Termination codon will be the same for all segments of a given transcript
 - PolyA_DB 3 provides frequency of usage as a percentage—this may be left blank if a different resource is used for polyA site annotation
@@ -156,4 +156,9 @@ Kishor et al NAR 2020 - Accepted
 Bray NL, Pimentel H, Melsted P, Pachter L. Near-optimal probabilistic RNA-seq quantification Nat Biotechnol. 2016;34(5):525‐527. <a href="https://doi.org/10.1038/nbt.3519" class="" classname="" target="_blank" name="">doi:10.1038/nbt.3519</a>
 
 Wang R, Nambiar R, Zheng D, Tian B. PolyA_DB 3 catalogs cleavage and polyadenylation sites identified by deep sequencing in multiple genomes. Nucleic Acids Res. 2018;46(D1):D315‐D319. <a href="https://doi.org/10.1093/nar/gkx1000" class="" classname="" target="_blank" name="">doi:10.1093/nar/gkx1000</a>
+
+
+ 
+
+
 
