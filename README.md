@@ -63,12 +63,12 @@ python TreeFar.py --files_path Output_collected_for_TreeFar -g0 contr1,contr2,co
 ```
 # Output file contents
 
-Two output files are generated.
+<b>Two output files are generated.</b>
 - The first is quantification of all the segments prior to analysis by TreeFar (example [here](docs/ Quant_8hDex_vs_cont.csv)).  
 - The second is the final output table (example [here](docs/NMD_8hDex_vs_cont.csv).  Note that the 3’UTR segments filtered out of the analysis are dropped to the end of the table, with the reason for exclusion in the “FILTER” column.
 For explanation of segdiff and normdiff calculations, see schematic and the paper methods section.  
 
-The output is a comma-separated file with the following columns:<br/>
+<b>The output is a comma-separated file with the following columns:</b><br/>
 GeneID: extracted from target_id	<br/>
 Segment: extracted from target_id; numbered from 5’-most segment to 3’-most segment, does not re-number if segments are excluded from analysis	<br/>
 target_id: Full segment label<br/>	
