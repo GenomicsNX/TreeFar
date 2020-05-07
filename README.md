@@ -56,13 +56,13 @@ Usage: python TreeFar.py [arguments]
 
 Required arguments:
 
---files_path, -f         directory of kallisto output files for use by TreeFar
---group_control, -g0     comma separated list of the first set of kallisto output
+--files_path, -f         Directory of kallisto output files for use by TreeFar
+--group_control, -g0     Comma separated list of the first set of kallisto output
                          data files (typically control).  The algorithm assumes 
                          the kallisto output files are named along the lines of 
                          "NT1_abundance.tsv" so you would just put whatever comes 
                          before the "_abundance.tsv" in this list.
---group_treatment, -g1   comma separated list of the second set of kallisto output 
+--group_treatment, -g1   Comma separated list of the second set of kallisto output 
                          data files (typically test condition).  Similar naming 
                          convention as described above.
 --out, -o                File prefix for final output table.  The final output name 
@@ -74,9 +74,9 @@ Required arguments:
 
 Optional arguments:
 
---label_control, -l0     label for condition in -g0 (default: Control).  This 
+--label_control, -l0     Label for condition in -g0 (default: Control).  This 
                          will appear also in the output file name.
---label_treatment, -l1   label for condition in -g1 (default: Treatment).  
+--label_treatment, -l1   Label for condition in -g1 (default: Treatment).  
                          This will appear also in the output file name.
 --mean_filter            Value of the mean -g0 TPM that defines the lower limit for 
                          retaining segments in the analysis.  Greater values are 
