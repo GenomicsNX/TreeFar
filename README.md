@@ -53,6 +53,7 @@ For each RNA-Seq dataset, kallisto outputs a folder that is named by the user.  
 ```
 Usage: python TreeFar.py [arguments]
 
+
 Required arguments:
 
 --files_path, -f         directory of kallisto output files for use by TreeFar
@@ -68,6 +69,8 @@ Required arguments:
                          will be this string + l1 + l0, where the final two 
                          components are automatically appended by the algorithm.
 --out_main, -x           File prefix for data before filtering and analysis
+
+
 
 Optional arguments:
 
