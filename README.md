@@ -37,7 +37,7 @@ Download the script for TreeFar [here](docs/TreeFar.py).
 
 # Usage
 ## First, quantify segment usage
-Use kallisto to quantify the segments using RNA-Seq data.  TreeFar uses the "target_id" and "tpm" columns from the abundance.tsv file.
+Use kallisto to quantify the segments using RNA-Seq data. Kallisto outputs a folder containing the following three files 1) abundance.h5, 2) abundance.tsv, 3) run_info.json.  TreeFar uses the "target_id" and "tpm" columns from the abundance.tsv file.
 - The hg19 kallisto index from this study can be downloaded [here](http://bioinformatics.nhlbi.nih.gov/files/Hogg_Lab/TreeFar/hg19index.zip) (Please unzip the file after downloading) and may be used for pseudoalignment if appropriate.
 ```
 kallisto quant -i hg19index -o contr1 --bias -b 1000 -t 16 --rf-stranded FASTQ-files
@@ -101,7 +101,7 @@ python TreeFar.py --files_path Output_collected_for_TreeFar -g0 contr1,contr2,co
 <b>Two output files are generated.</b>
 - The first is quantification of all the segments prior to analysis by TreeFar (example [here](results/Quant_8hDex_vs_cont.csv)).
 - The second is the final output table (example [here](results/NMD_8hDex_vs_cont.csv).  Note that the 3’UTR segments filtered out of the analysis are dropped to the end of the table, with the reason for exclusion in the "FILTER" column.
-For explanation of segdiff and normdiff calculations, see schematic and the paper methods section.  
+For explanation of segdiff and normdiff calculations, see workflow diagram and Kishor et al. methods.  
 
 <b>The output is a comma-separated file with the following columns:</b><br/>
 GeneID: extracted from target_id	<br/>
