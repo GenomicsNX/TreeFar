@@ -54,6 +54,7 @@ For each RNA-Seq dataset, kallisto outputs a folder that is named by the user.  
 Usage: python TreeFar.py [arguments]
 
 Required arguments:
+
 --files_path, -f         directory of kallisto output files for use by TreeFar
 --group_control, -g0     comma separated list of the first set of kallisto output
                          data files (typically control).  The algorithm assumes 
@@ -69,6 +70,7 @@ Required arguments:
 --out_main, -x           File prefix for data before filtering and analysis
 
 Optional arguments:
+
 --label_control, -l0     label for condition in -g0 (default: Control).  This 
                          will appear also in the output file name.
 --label_treatment, -l1   label for condition in -g1 (default: Treatment).  
