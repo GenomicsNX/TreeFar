@@ -176,7 +176,7 @@ In this case, `-g0` and `-g1` will have the list of the column names for the con
 
 # Citations
 
-Kishor AK, et al. Activation and inhibition of nonsense-mediated mRNA decay controls the abundance of alternative polyadenylation products. bioRxiv <a href="https://www.biorxiv.org/content/10.1101/794719v1.full" class="" classname="" target="_blank" name="">doi: 10.1101/794719</a>. 
+Aparna Kishor, Sarah E Fritz, Nazmul Haque, Zhiyun Ge, Ilker Tunc, Wenjing Yang, Jun Zhu, J Robert Hogg. Activation and inhibition of nonsense-mediated mRNA decay controls the abundance of alternative polyadenylation products. Nucleic Acids Research <a href="https://doi.org/10.1093/nar/gkaa491" class="" classname="" target="_blank" name="">doi: 10.1093/nar/gkaa491</a>. 
 
 Bray NL, Pimentel H, Melsted P, Pachter L. Near-optimal probabilistic RNA-seq quantification Nat Biotechnol. 2016;34(5):525‐527. <a href="https://doi.org/10.1038/nbt.3519" class="" classname="" target="_blank" name="">doi:10.1038/nbt.3519</a>
 
